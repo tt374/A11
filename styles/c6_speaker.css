@@ -1,0 +1,134 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --global-color-1: #800000;
+    --border-color: #931420;
+    --bg-color: #fffded;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid var(--border-color);
+    background-color: var(--bg-color);
+}
+
+/* Header styles */
+header {
+    border-bottom: 3px solid var(--border-color);
+    background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    padding: 1.5em 0 2em 0;
+}
+
+header img {
+    float: left;
+    margin-right: 15px;
+    padding: 0 30px;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header h2 {
+    font-size: 170%;
+    color: var(--global-color-1);
+    margin-bottom: 0.3em;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+
+/* Main content layout */
+main {
+    clear: both;
+}
+
+section {
+    width: 525px;
+    float: right;
+    padding: 0 20px 20px 20px;
+}
+
+aside {
+    width: 215px;
+    float: right;
+    padding: 0 0 20px 20px;
+}
+
+/* Headings */
+h1 {
+    font-size: 150%;
+    padding: 0.5em 0 0.25em 0;
+    margin: 0;
+    color: var(--global-color-1);
+}
+
+h2 {
+    font-size: 120%;
+    padding: 0.5em 0 0.25em 0;
+}
+
+/* Speaker content */
+.speaker-content img {
+    float: right;
+    border: 1px solid black;
+    margin: 0 0 1em 1em;
+}
+
+.speaker-content p {
+    margin-bottom: 1em;
+    line-height: 1.4;
+}
+
+/* Guest speakers list */
+.guest-speakers h2 {
+    margin-bottom: 0.5em;
+}
+
+.guest-speakers h3 {
+    color: var(--global-color-1);
+    margin: 1em 0 0.5em 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--border-color);
+    color: white;
+    padding: 1em 0;
+    clear: both;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Link styles */
+a {
+    color: var(--global-color-1);
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    font-style: italic;
+}
+
+/* Text shadow for anniversary */
+.shadow {
+    text-shadow: 2px 2px var(--global-color-1);
+}
